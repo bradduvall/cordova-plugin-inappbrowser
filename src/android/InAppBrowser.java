@@ -562,12 +562,11 @@ public class InAppBrowser extends CordovaPlugin {
             if (show != null) {
                 showLocationBar = show.equals("yes") ? true : false;
             }
-            if(showLocationBar) {
                 String hideNavigation = features.get(HIDE_NAVIGATION);
                 String hideUrl = features.get(HIDE_URL);
                 if(hideNavigation != null) hideNavigationButtons = hideNavigation.equals("yes") ? true : false;
                 if(hideUrl != null) hideUrlBar = hideUrl.equals("yes") ? true : false;
-            }
+		    
             String zoom = features.get(ZOOM);
             if (zoom != null) {
                 showZoomControls = zoom.equals("yes") ? true : false;
